@@ -1,0 +1,5 @@
+clsd-source
+https://mybrowseraddon.com/audiocontext-defender.html
+https://chrome.google.com/webstore/detail/webrtc-leak-shield/bppamachkoflopbagkdoflbgfjflfnfl
+https://chrome.google.com/webstore/detail/webgl-fingerprint-defende/olnbjpaejebpnokblkepbphhembdicik
+https://chrome.google.com/webstore/detail/browser-plugs-fingerprint/gpgbpgdfipppcelfbdlbkhmibofknppj
