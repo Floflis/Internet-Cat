@@ -1,0 +1,26 @@
+Recognize IPFS/Dat hash on links, and show available others
+Favorites (with placeable previews and API)
+Anon mode
+Tor mode (attent)
+Colored tabs
+FrameworkJS: HTML5Apps Platform suggest
+Proxy supports S/V
+Create 3Box profile for browser
+Save articles on DPocket
+Print actual page
+Search engine settings
+Restore closed tabs
+History
+Start page: most accessed, pinned, search, categories
+
+blur:
+app.commandLine.appendSwitch('--enable-experimental-web-platform-features');
+-----
+mainWindow = new BrowserWindow({x: 100, y: 100, width: 800, height: 600, 'web-preferences': {'plugins': true}});
+-----
+https://discuss.atom.io/t/how-to-access-chrome-flags-in-electron/16470/6
+https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+https://codeburst.io/ios-backdrop-effect-on-chrome-and-non-webkit-browsers-summary-of-currently-available-techniques-34b0f624ae6a
+
+Session manager
+When openning a URL with closed browser, open just this URL and tell the session is saved. Even doing more things on top without openning previous sessions, they`re kept and supports renaming, thumbnail and descriptions.

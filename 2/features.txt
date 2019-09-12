@@ -1,0 +1,9 @@
+Tabs
+Load favicon, title, color and description
+Start: most acessed
+Settings: resume, search, buttons
+chrome themes
+BTC web3 API
+Previous/Forward
+
+Brand new browser menu (organized, fast, intuitive)

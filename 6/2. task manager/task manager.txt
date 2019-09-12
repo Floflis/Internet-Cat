@@ -1,0 +1,2 @@
+https://github.com/getstation/electron-process-manager
+https://github.com/koush/electron-chrome

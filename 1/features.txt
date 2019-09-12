@@ -1,0 +1,15 @@
+Address bar
+
+Load WWW pages
+Show loading status
+Refresh
+Start page
+
+Home button
+
+
+BTC Wallet
+Paper wallet
+
+Previous page button
+Dragable frameless window
