@@ -4,7 +4,7 @@
 <body>
 <center><img src="start-tile-150.png"/><br/><h1>Internet Cat</h1><h5>The most cute and kind web browser</h5></center>
 <hr/>
-<h2>Features</h2>
+<h2>Features (upcoming)</h2>
 <ul>
 <li>Access IPFS and recognizes .eth domains</li>
 <li>Support Dat sites, with Beaker modules</li>
@@ -17,7 +17,7 @@
 <li>Chrome extensions and apps</li>
 <li>Colored tabs</li>
 </ul>
-<h2>Other features</h2>
+<h2>Other upcoming features</h2>
 <ul>
 <li>Recognize OL for .eth domains</li>
 <li>Support ZeroNet sites</li>
@@ -37,5 +37,210 @@
 <li>ip mode</li>
 <li>Proxy switch</li>
 <li>Support Emmet and other markp languages</li>
+</ul>
+<h2>r1 feature list (first version)</h2>
+<img src="1/design.png"/>
+<ul>
+<li>Address bar
+</li>
+<li>Sandbox iframe</li>
+<li>Load WWW pages (reads from input, updates on iframe)</li>
+<li>Show loading status</li>
+<li>Refresh</li>
+<li>Start page
+</li>
+<li>Home button</li>
+<hr/>
+<li>(message in start page) IC isn't ready, because it doesn't:</li>
+<li>- supports iframe and other web advanced features</li>
+<li>- stores logins</li>
+<li>- saves sessions</li>
+<li>- records history</li>
+<li>- haves multi-tab browsing</li>
+<li>- support extensions</li>
+<hr/>
+<li>Dragable frameless window</li>
+<li>Previous page button</li>
+<hr/>
+<li>Floflis' tree folder</li>
+<hr/>
+<li>KeeWeb password manager (as a new window/Electron process)</li>
+<hr/>
+<li>Bitcoin Center (with Bitcoin's Wallet and Pig Vault)</li>
+<hr/>
+<li>Install Cygwin with packed needs: IPFS, NodeJS, Dat</li>
+<hr/>
+<li>Updates from Dat</li>
+</ul>
+<h2>r2 feature list</h2>
+<img src="nxt/2/choose-init-theme.png"/><br/>
+<img src="nxt/2/delicate.png"/><br/>
+<img src="nxt/2/common-design.png"/>
+<ul>
+<li>Icon on system tray</li>
+<li>Issues app</li>
+<li>Tasks app</li>
+<hr/>
+<li>Tabs</li>
+<li>https://github.com/mottox2/electron-tab-browser</li>
+<li>https://github.com/geeeeeeeeek/electron-tabview</li>
+<li>https://github.com/electron/electron/blob/master/docs/api/browser-window.md</li>
+<hr/>
+<li>Previous/Forward
+</li>
+<li>Load favicon, title, color and description</li>
+<hr/>
+<li>Start: most acessed</li>
+<li>Settings: resume, search, buttons</li>
+<hr/>
+<li>On init, choose between Delicate and Common Design</li>
+<hr/>
+<li>chrome themes: J:\.d\personal\data\tasks\Z- Labs\Plasmozilla FireFloflis\MaterialFox</li>
+<hr/>
+<li>
+BTC web3 API</li>
+<hr/>
+<li>Brand new browser menu (organized, fast, intuitive)
+</li>
+</ul>
+<h2>r3</h2>
+<ul>
+<li>Smaller tabs</li>
+<li>Colored tabs
+</li>
+<li>History</li>
+<li>Favorites (with placeable previews and API)</li>
+<hr/>
+<li>Based on Muon (Electron's fork early used on Brave browser)</li>
+<li>Switch between MetaMask/Frame</li>
+<li>MetaMask/Frame button</li>
+<li>Create 3Box profile for browser</li>
+<hr/>
+<li>Aragon</li>
+<li>Own DAO https://rinkeby.aragon.org/#/ic/</li>
+<hr/>
+<li>blur:
+</li>
+<li>app.commandLine.appendSwitch('--enable-experimental-web-platform-features');
+</li>
+<li>mainWindow = new BrowserWindow({x: 100, y: 100, width: 800, height: 600, 'web-preferences': {'plugins': true}});</li>
+<li>https://discuss.atom.io/t/how-to-access-chrome-flags-in-electron/16470/6
+</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+</li>
+<li>https://codeburst.io/ios-backdrop-effect-on-chrome-and-non-webkit-browsers-summary-of-currently-available-techniques-34b0f624ae6a
+
+Session manager</li>
+<hr/>
+<li>https://caniuse.com/#feat=css-backdrop-filter</li>
+<hr/>
+<li>Open Badges</li>
+</ul>
+<h2>r4</h2>
+<ul>
+<li>IPFS button and daemon</li>
+<li>Dat button and CLI</li>
+<li>.eth sites</li>
+<li>Support protocols: browser, file, localhost, http, https, ipfs, dat (C2 text begins with, C2 text contains)
+</li>
+<li>Session manager</li>
+<li>If not on Floflis, display contacts</li>
+<li>If not on Floflis, support Alertaj
+</li>
+<li>Add other local browser users</li>
+<li>Users' accounts are encrypted</li>
+<li>Sync</li>
+</ul>
+<h2>r5</h2>
+<ul>
+<li>Better integration with Dat</li>
+<li>Ask default browser</li>
+<li>Supports UWP (Windows)</li>
+<li>Duniter</li>
+</ul>
+<h2>r6</h2>
+<ul>
+<li>Steem Keychain</li>
+<li>Task manager</li>
+<li>Save articles on DPocket</li>
+<li>Privacy: canvas fingerprint blocker</li>
+<li>Proxy switch
+</li>
+<li>Supports S/V</li>
+<li>Per-site personalized CSS and JS</li>
+<li>Adblock</li>
+<hr/>
+<li>Recognize IPFS/Dat hash on links, and show available others</li>
+<li>Anon mode
+</li>
+<li>Tor mode (attent)</li>
+<li>FrameworkJS: HTML5Apps Platform suggest</li>
+<hr/>
+<li>Print actual page</li>
+<li>Search engine settings</li>
+<li>Restore closed tabs</li>
+<li>Start page: most accessed, pinned, search, categories</li>
+<li>When openning a URL with closed browser, open just this URL and tell the session is saved. Even doing more things on top without openning previous sessions, they`re kept and supports renaming, thumbnail and descriptions.
+</li>
+</ul>
+<h2>r7</h2>
+<ul>
+<li>pdf.js</li>
+<li>Improved adblock and anti-tracking (from Brave browser)</li>
+<li>Support BAT tokens and ads</li>
+<li>Distribution for PortableApps Platform</li>
+</ul>
+<h2>r8</h2>
+<ul>
+<li>Features/modules from Beaker browser</li>
+<hr/>
+<li>WebTorrent</li>
+<hr/>
+<li>Identify when Internet connection needs login</li>
+<hr/>
+<li>Chrome Web Apps (integrate with HTML5Apps Platform)</li>
+<li>List installed extensions and apps</li>
+<hr/>
+<li>UniStore (extensions, web apps, themes)</li>
+<hr/>
+<li>ZN
+</li>
+<li>Support Emercoin and Namecoin domains</li>
+<li>Recognizes Omni-Link for decent TLD domains
+</li>
+<hr/>
+<li>Download manager integrated with HTML5Apps Platform
+</li>
+</ul>
+<h2>r9</h2>
+<ul>
+<li>DApp Store (comptible with Chrome apps)</li>
+<li>Support SSB</li>
+<li>Omni-Login (Dat`s UnwalledGarden, ZN, SSB, SW, IPNS) data sync</li>
+<li>DCloud (IP-cluster, Siacoin and others - integrated with Floflis and HTML5Apps</li>
+<li>Start page supports Floflis` tiles and animated backgrounds</li>
+<li>https://github.com/lmgonzalves/animated-refresh-icon</li>
+<li>Open protocols on external apps</li>
+</ul>
+<h2>r10</h2>
+<ul>
+<li>Mobile mode</li>
+<li>Detect when site is a PWA, banner with ask to install</li>
+<li>Shared libs for faster pages
+</li>
+<li>P2P site reviews
+</li>
+<li>i2 mode</li>
+<li>QR
+</li>
+<li>Support Emmet/QSL
+</li>
+<li>OS native print dialog, IC printer (supports print to PDF and others)</li>
+</ul>
+<h2>r11</h2>
+<ul>
+<li>EtherAddressLook</li>
+<li>Download chat histories from different messengers</li>
+<li>KDE Connect</li>
 </ul>
 </body>
