@@ -1,3 +1,5 @@
+Icon on system tray
+
 Tabs
 https://github.com/mottox2/electron-tab-browser
 https://github.com/geeeeeeeeek/electron-tabview

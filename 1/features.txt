@@ -1,5 +1,6 @@
 Address bar
 
+Sandbox iframe
 Load WWW pages (reads from input, updates on iframe) 
 Show loading status
 Refresh
@@ -8,6 +9,7 @@ Start page
 Home button
 
 IC isn't ready, because it doesn't:
+- supports iframe and other web advanced features
 - stores logins
 - saves sessions
 - records history
