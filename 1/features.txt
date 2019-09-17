@@ -19,4 +19,10 @@ Previous page button
 
 Tree folder
 
+KeeWeb password manager
+
+Bitcoin Center
+
 Install Cygwin with packed needs: IPFS, NodeJS, Dat
+
+Updates from Dat
