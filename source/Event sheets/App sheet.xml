@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>App sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="806523564058118">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="224016672649049" type="System" />
+            </conditions>
+            <actions>
+                <action id="32" name="Maximize" sid="568563506455960" type="Electron" />
+                <action id="19" name="Include Javascript file" sid="994970542104687" type="UI">
+                    <param id="0" name="Javascript file">&quot;script.js&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="752720606937373" type="UI">
+                    <param id="0" name="CSS file">&quot;style.css&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="943792650552138" type="UI">
+                    <param id="0" name="CSS file">&quot;page-common.css&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="289795678845114" type="UI">
+                    <param id="0" name="CSS file">&quot;page-custom.css&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="302918853826804" type="UI">
+                    <param id="0" name="CSS file">&quot;app-common.css&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="751261159356441" type="UI">
+                    <param id="0" name="CSS file">&quot;app-custom.css&quot;</param>
+                </action>
+                <action disabled="1" id="2" name="Import CSS file" sid="946398050736324" type="UI">
+                    <param id="0" name="CSS file">&quot;dark-common.css&quot;</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="899324844801579" type="UI">
+                    <param id="0" name="Javascript file">&quot;bootstrap.min.js&quot;</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="339003747574287" type="UI">
+                    <param id="0" name="Javascript file">&quot;material.min.js&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="473604117283294" type="UI">
+                    <param id="0" name="CSS file">&quot;material.min.css&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="928703189522733" type="UI">
+                    <param id="0" name="CSS file">&quot;robotofont.css&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="982682542923008" type="UI">
+                    <param id="0" name="CSS file">&quot;iconsfont.css&quot;</param>
+                </action>
+                <action id="8" name="Load content" sid="208140225315479" type="UI">
+                    <param id="0" name="URL">&quot;init.html&quot;</param>
+                    <param id="1" name="POST Data (Optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block disabled="1" sid="590001726326575">
+                    <conditions />
+                    <actions>
+                        <action id="19" name="Include Javascript file" sid="655332235255019" type="UI">
+                            <param id="0" name="Javascript file">&quot;ZeroFrame.js&quot;</param>
+                        </action>
+                        <action id="19" name="Include Javascript file" sid="551232901630855" type="UI">
+                            <param id="0" name="Javascript file">&quot;ZeroPage.js&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="811395584260083">
+                    <conditions />
+                    <actions>
+                        <action id="19" name="Include Javascript file" sid="518366554995020" type="UI">
+                            <param id="0" name="Javascript file">&quot;popper.min.js&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Internet Cat</name>
+    <description>The most cute and kind web browser</description>
+    <version>r1</version>
+    <author>Daniell Mesquita</author>
+    <author-email>daniellmesquita@protonmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.floflis.internetcat</app-id>
+    <unique-id>1a0mdkjfspcoo</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="PlayLive" id="HTML_iFrame" version="1.419999957">HTML | iFrame</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Armaldio" id="armaldio_electron" version="1">Electron</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Splash</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Custom</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="UI" sid="538434545119300">
+            <plugin id="HTML_iFrame" />
+        </object-type>
+        <object-type name="AJAX" sid="837044189710854">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Browser" sid="891593712766923">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Electron" sid="117654457792398">
+            <plugin id="armaldio_electron" />
+        </object-type>
+        <object-type name="Splash" sid="642900505670895">
+            <plugin id="HTML_iFrame" />
+        </object-type>
+        <object-type name="Keyboard" sid="630822245513938">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>App.xml</layout>
+        <layout>Splash.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>App sheet.xml</event-sheet>
+        <event-sheet>Common sheet.xml</event-sheet>
+        <event-sheet>Splash sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="AJAX" uid="1" />
+        <global-instance type="Browser" uid="2" />
+        <global-instance type="Electron" uid="5" />
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="bootstrap.min.js" />
+        <file name="font.eot" />
+        <file name="font.ttf" />
+        <file name="font.woff" />
+        <file name="font.woff2" />
+        <file name="iconsfont.css" />
+        <file name="material.min.css" />
+        <file name="material.min.js" />
+        <file name="page-custom.css" />
+        <file name="popper.min.js" />
+        <file name="roboto-cyrillic.woff2" />
+        <file name="roboto-cyrillicext.woff2" />
+        <file name="robotofont.css" />
+        <file name="roboto-greek.woff2" />
+        <file name="roboto-greekext.woff2" />
+        <file name="roboto-latin.woff2" />
+        <file name="roboto-latinext.woff2" />
+        <file name="roboto-vietnamese.woff2" />
+        <file name="script.js" />
+        <file name="ZeroFrame.js" />
+        <file name="ZeroPage.js" />
+        <file name="icon.png" />
+        <file name="style.css" />
+        <file name="loading.gif" />
+        <file name="app-custom.css" />
+        <file name="init.html" />
+        <file name="app-common.css" />
+        <file name="page-common.css" />
+        <file name="page-common.js" />
+    </files-folder>
+</c2project>
