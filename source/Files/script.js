@@ -1,3 +1,4 @@
+/* Only displays enter button if input haves valid text > */
 var flght = document.getElementById("flght");
 
 const input = document.querySelector('input')
@@ -20,7 +21,9 @@ input.addEventListener('input', evt => {
     input.dataset.state = 'invalid'
   }
 })
+/* < */
 
+/* get text from input > */
         function getInputValue(){
 
             // Selecting the input element and get its value 
@@ -34,7 +37,9 @@ input.addEventListener('input', evt => {
             alert(inputVal);
 
         }
+/* < */
 
+/* If input haves valid text and it is submitted, update iframe URL with input's text > */
 function required()
 {
 var empt = document.forms["urlsubmit"]["urltext"].value;
@@ -47,3 +52,10 @@ else
 document.getElementById('browserframe').src = inputVal;
 }
 }
+/* < */
+
+/* knows if iframe has been loaded > */
+function frameload(){
+ alert("iframe loaded")
+}
+/* < */
