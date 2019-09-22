@@ -16,7 +16,7 @@
                     <param id="2" name="Animated">1</param>
                 </action>
                 <action id="30" name="Set title" sid="118451295452074" type="Electron">
-                    <param id="0" name="Title">&quot;FrameworkJS | Loading...&quot;</param>
+                    <param id="0" name="Title">&quot;Internet Cat | Loading...&quot;</param>
                 </action>
                 <action id="19" name="Include Javascript file" sid="335393644757179" type="Splash">
                     <param id="0" name="Javascript file">&quot;script.js&quot;</param>
@@ -32,7 +32,7 @@
                 </action>
                 <action id="14" name="Log" sid="364445049167335" type="Browser">
                     <param id="0" name="Type">0</param>
-                    <param id="1" name="Message">&quot;Changed window title to &apos;FrameworkJS | Loading...&apos;&quot;</param>
+                    <param id="1" name="Message">&quot;Changed window title to &apos;Internet Cat | Loading...&apos;&quot;</param>
                 </action>
             </actions>
         </event-block>

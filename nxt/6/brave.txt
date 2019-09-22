@@ -1,0 +1,2 @@
+https://github.com/brave/browser-laptop-bootstrap
+https://github.com/brave/crypto/

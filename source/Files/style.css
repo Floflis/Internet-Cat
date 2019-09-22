@@ -1,4 +1,4 @@
-#splash{-webkit-app-region:drag;user-select:none;cursor:default;background:#00A185!important;color:#FFFFFF}
+#splash{-webkit-app-region:drag;user-select:none;cursor:default;background:#00B0F0!important;color:#FFFFFF}
 #splash img{-webkit-user-drag:none;user-drag:none}
 #splash, #html{background: rgb(239, 239, 239);top: 0px!important;left: 0px!important;position: absolute!important;width: calc(100% + 0px) !important;height: calc(100% + 0px) !important;overflow: hidden!important;}
 #logo{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-top:45px;border-radius: 20px}
@@ -6,7 +6,7 @@
 #bellowtabs{height:calc(100% - 48px)!important;overflow-x:hidden}
 
 browserbar {
-    background: #00A185;
+    background: #F67EE8;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@ browserbar {
     z-index: 5000;
 }
 
-iframe.browserframe {
+iframe#browserframe {
     width: 100%;
     height: calc(100% - 53px);
     top: 42px;
@@ -30,16 +30,28 @@ iframe.browserframe {
 input.addressbar {
     max-width: 100%;
     margin-top: 4px;
-    border: 1px dashed #333;
+    border-size: 1px;
+    border-style: dashed;
+    border-color: #333;
     background: rgba(255, 255, 255, 0.55);
     display: inline;
     position: relative;
     float: left;
 }
 
-input.addressbar:hover{border:1px dotted #000}
+input.addressbar:hover{border-color: #000}
 
 input.addressbar:focus{background:#fff}
+
+/* Show green borders when valid */
+input[data-state="valid"] {
+  border-color: hsl(120, 76%, 50%);
+}
+
+/* Show red borders when filled, but invalid */
+input[data-state="invalid"] {
+  border-color: hsl(0, 76%, 50%);;
+}
 
 button.browserbutton {
     display: inline;

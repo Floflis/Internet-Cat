@@ -1,3 +1,11 @@
 <div id="app">
-<browserbar><button class="browserbutton"></button><button class="browserbutton"></button><input class="addressbar" placeholder="Type a site URL/address and press [ENTER]"></browserbar>
-<iframe class="browserframe" frameborder="none"></iframe></div>
+
+<browserbar>
+
+<button class="browserbutton"><i class="material-icons">home</i></button><button class="browserbutton"><i class="material-icons">arrow_back</i></button><button class="browserbutton"><i class="material-icons">arrow_forward</i></button><button class="browserbutton"><i class="material-icons">refresh</i></button>
+
+<form name="urlsubmit" action="#" onsubmit="required()"><input type='text' name ='urltext' id="input" placeholder="Type a site URL/address and press [ENTER]" class="addressbar"/><button id="flght" style="display: none" type="submit" name="submit" onclick="getInputValue();" class="browserbutton"><i class="material-icons">flight_takeoff</i></button></form>
+
+</browserbar>
+
+<iframe sandbox="allow-scripts allow-popups allow-forms" frameborder="none" id="browserframe"></iframe></div>
