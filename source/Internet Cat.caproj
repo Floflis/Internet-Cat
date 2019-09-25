@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="PlayLive" id="HTML_iFrame" version="1.419999957">HTML | iFrame</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Armaldio" id="armaldio_electron" version="1">Electron</plugin>
@@ -62,6 +63,9 @@
         </object-type>
         <object-type name="Keyboard" sid="630822245513938">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type global="1" name="Dictionary" sid="660383225361789">
+            <plugin id="Dictionary" />
         </object-type>
     </object-folder>
     <families />
@@ -120,5 +124,24 @@
         <file name="app-common.css" />
         <file name="page-common.css" />
         <file name="page-common.js" />
+        <file name="cryptocurrency.svg" />
+        <file name="donation.svg" />
+        <file name="wallet.svg" />
+        <file name="kitty-sleep-dialog.svg" />
+        <file name="start.html" />
+        <file name="kitty-fish.svg" />
+        <file name="kitty-love.svg" />
+        <file name="space-cat.svg" />
+        <file name="exitdialog.html" />
+        <file name="aboutdialog.html" />
+        <file name="cryptocenterdrawer.html" />
+        <file name="mainmenudrawer.html" />
+        <file name="kitty-sleep.svg" />
+        <file name="adopt-pet-now.svg" />
+        <file name="adopted.svg" />
+        <file name="gl-matrix.js" />
+        <file name="loading.css" />
+        <file name="loading.html" />
+        <file name="loading.js" />
     </files-folder>
 </c2project>

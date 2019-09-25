@@ -1,0 +1,21 @@
+<div class="modal fade" id="exitDialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Exit from Internet Cat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center><img width="350px" src="kitty-sleep-dialog.svg"/></center>
+        <p>Are you sure there is no work open? If so, please consider any unsaved work <small>(wallets, password database, a form in a site, etc)</small>.</p>
+<p>Do you want to exit from Internet Cat?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-primary btn-lg btn-block">Don't exit</button>
+<button onclick="var window = remote.getCurrentWindow();window.close();" type="button" class="btn btn-danger btn-lg btn-block">Exit</button>
+      </div>
+    </div>
+  </div>
+</div>

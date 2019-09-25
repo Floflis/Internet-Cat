@@ -1,0 +1,90 @@
+﻿<script>
+navigator.__defineGetter__('userAgent', function(){return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'});navigator.userAgent;setUserAgent(document.querySelector('#browserframe').contentWindow, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586');
+</script>
+<center>
+<h3>Search the Web</h3>
+<form method="get" action="http://www.bing.com/search">
+<div style="border:1px solid black;padding:4px;width:20em;">
+<input type="text"   name="q" size="25"
+maxlength="255" value="" /> <input type="submit" value="Bing Search" />
+</div>
+</form>
+<small>Internet Cat isn't partnered with Microsoft/Bing. This is just the only search engine which works on iframes, the technology initially used by IC to load sites.</small>
+</center>
+
+<!--<form method="get" action="https://www.qwant.com/search">
+
+<div style="border:1px solid black;padding:4px;width:20em;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="p" size="25"
+maxlength="255" value="" />
+<input type="submit" value="Search the Internet" /></td></tr>
+<tr><td align="center" style="font-size:75%">
+<br />
+</td></tr></table>
+</div>
+
+</form>-->
+
+<!--<form method="get" action="http://www.google.com/search">
+
+<div style="border:2px dotted black;padding:4px;width:15em;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25" style="color:#808080;"
+maxlength="255" value="Search Google"
+onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+<input type="submit" value="Go!" />
+</td></tr>
+</table>
+</div>
+
+</form>-->
+
+<!--<form method="get" action="http://search.yahoo.com/search">
+
+<div style="border:1px solid black;padding:4px;width:20em;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="p" size="25"
+maxlength="255" value="" />
+<input type="submit" value="Search Yahoo!" /></td></tr>
+<tr><td align="center" style="font-size:75%">
+<br />
+</td></tr></table>
+</div>
+
+</form>-->
+
+<p>Soon, Internet Cat will support a variety of search engines. Not only on this start page and in address bar, you will be able to search even from your system-tray and desktop! In mobile browser, it will also have search widgets for launcher.</p>
+
+<h3>Internet Cat isn't yet ready, because it doesn't:</h3>
+<ul>
+<li>supports webview and other web advanced features</li>
+<li>stores logins</li>
+<li>saves sessions</li>
+<li>records history</li>
+<li>haves multi-tab browsing</li>
+<li>support extensions</li>
+</ul>
+<p>With a few of work, all of that will be implemented. And it will be the minimum, yet no more than our duty; soon there will be amazing features for your please ❤</p>
+
+<hr/>
+
+<center><script>
+//store the quotations in arrays
+quotes = new Array(6);
+quotes[0] = `<img width="50px" src="kitty-fish.svg"><h4>Did you knew?</h4><p>Fish is the best meal (what kitties calls as "meaw")! Eating fishes gives you increased health (except when you gulp spines).</p>`;
+quotes[1] = `<img width="50px" src="space-cat.svg"><h4>A true SpaceCat</h4><p>Soon, Internet Cat will support more networks, give you more ways of monetization, block ads and (really) protect your privacy.</p>`;
+quotes[2] = `<img width="50px" src="adopted.svg"><h4>Adopt a pet</h4><p>Your overall health will improve a lot! A dog will keep you lovely and energized, and your cat's purr is relaxing and will make you mindful (or mindfurr).</p><br/><a href="https://ipfs.io/ipfs/QmW7oUoWwtZPSgG9zFfdxEEquNNt2wB2Y5rTnJ86jTVhA7/"><button><img width="64px" src="adopt-pet-now.svg"/><br/><span style="font-size:32px">Adopt a pet now!</span></button></a>`;
+quotes[3] = `<img width="50px" src="kitty-sleep.svg"><h4>Sleep is power</h4><p>Sleep isn't just ok; it is a need. Also, sleep isnt't just a power nap; sleep is power. If they calls you a bum for sleeping, don't worry. People like Albert Einstein loved to take a extra sleep ;)</p>`;
+quotes[4] = ``;
+quotes[5] = ``;
+//calculate a random index
+index = Math.floor(Math.random() * quotes.length);
+//display the quotation
+document.write(`\n`);
+document.write(quotes[index]);
+//done
+</script></center>

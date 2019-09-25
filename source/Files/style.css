@@ -18,17 +18,22 @@ browserbar {
     z-index: 5000;
 }
 
-iframe#browserframe {
+#browserframe, .browserframe {
     width: 100%;
-    height: calc(100% - 53px);
+    height: calc(100% - 42px);
     top: 42px;
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
+#loadingscreen {
+    overflow-y: hidden;
+    z-index: 2;
+}
+
 input.addressbar {
-    max-width: 100%;
+    width: calc(100% - 52px);
     margin-top: 4px;
     border-size: 1px;
     border-style: dashed;
@@ -36,7 +41,6 @@ input.addressbar {
     background: rgba(255, 255, 255, 0.55);
     display: inline;
     position: relative;
-    float: left;
 }
 
 input.addressbar:hover{border-color: #000}
@@ -55,6 +59,10 @@ input[data-state="invalid"] {
 
 button.browserbutton {
     display: inline;
-    float: left;
     margin-right: 5px;
+    border-style: dashed!important
+}
+
+button.browserbutton:hover {
+    background: #2FC9FF!important
 }

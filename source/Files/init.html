@@ -2,10 +2,33 @@
 
 <browserbar>
 
-<button class="browserbutton"><i class="material-icons">home</i></button><button class="browserbutton"><i class="material-icons">arrow_back</i></button><button class="browserbutton"><i class="material-icons">arrow_forward</i></button><button class="browserbutton"><i class="material-icons">refresh</i></button>
+<div style="margin-top:-8px" class="d-flex bd-highlight d-flex justify-content-between">
 
-<form name="urlsubmit" action="#" onsubmit="required()"><input type='text' name ='urltext' id="input" placeholder="Type a site URL/address and press [ENTER]" class="addressbar"/><button id="flght" style="display: none" type="submit" name="submit" onclick="getInputValue();" class="browserbutton"><i class="material-icons">flight_takeoff</i></button></form>
+<div class="p-2 bd-highlight">
+<img width="50px" style="float:left" src="icon.png"/><button title="Open the home page" aria-label="Open the home page" onclick="window.frames['browserframe'].location = 'start.html';refreshbtn.style.display = 'inline';flght.style.display = 'none';document.getElementById('input').value=''" class="browserbutton"><i class="material-icons">home</i></button><button title="Click to go back" aria-label="Click to go back" onclick="window.frames['browserframe'].history.go(-1);" class="browserbutton" style="border-radius:50%"><i class="material-icons">arrow_back</i></button><button title="Click to go forward" aria-label="Click to go forward" onclick="window.frames['browserframe'].history.go(+1);" style="border-radius:50%" class="browserbutton"><i class="material-icons">arrow_forward</i></button>
+</div>
+
+<div class="p-2 flex-grow-1 bd-highlight">
+<input id="input" type="text" name ="urltext" placeholder="Type a site URL/address and press [ENTER]" class="addressbar"/>
+<button id="flght" title="Access this site" aria-label="Access this site" style="display: none" onclick="window.frames['browserframe'].location = document.querySelector('#input').value;" class="browserbutton"><i class="material-icons">flight_takeoff</i></button>
+<button title="Reload this page" aria-label="Reload this page" onclick="document.getElementById('browserframe').contentWindow.location.reload(true);" class="browserbutton" id="refresh"><i class="material-icons">refresh</i></button>
+</div>
+
+<div class="p-2 bd-highlight">
+  <button title="Crypto Center - click to manage Bitcoin and others" aria-controls="navdrawerDefault" aria-expanded="false" aria-label="Crypto Center - click to manage Bitcoin and others" class="browserbutton" data-target="#navdrawerCryptoCenter" data-toggle="navdrawer">
+    <img width="25px" src="cryptocurrency.svg">
+  </button>
+
+  <button title="Menu - click to print this page, know more or to exit" aria-controls="navdrawerDefault" aria-expanded="false" aria-label="Menu - click to print this page, know more or to exit" class="browserbutton" data-target="#navdrawerDefault" data-toggle="navdrawer"><i class="material-icons">menu</i></button>
+</div>
+
+</div>
 
 </browserbar>
 
-<iframe src="about:blank" onload="frameload()" sandbox="allow-scripts allow-popups allow-forms" frameborder="none" id="browserframe"></iframe></div>
+<iframe style="display: none" src="loading.html" sandbox="allow-scripts allow-popups allow-modals allow-forms" frameborder="none" class="browserframe" id="loadingscreen"></iframe>
+<iframe src="start.html" onload="C2('iframeloaded');" sandbox="allow-scripts allow-popups allow-modals allow-forms" frameborder="none" id="browserframe" name="browserframe"></iframe>
+<script>
+navigator.__defineGetter__('userAgent', function(){return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'});navigator.userAgent;setUserAgent(document.querySelector('#browserframe').contentWindow, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586');
+</script>
+</div>

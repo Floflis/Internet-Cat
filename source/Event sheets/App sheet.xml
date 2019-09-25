@@ -17,6 +17,12 @@
                     <param id="0" name="Type">0</param>
                     <param id="1" name="Message">&quot;Changed window title to &apos;Internet Cat&apos;&quot;</param>
                 </action>
+                <action id="19" name="Include Javascript file" sid="518366554995020" type="UI">
+                    <param id="0" name="Javascript file">&quot;popper.min.js&quot;</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="899324844801579" type="UI">
+                    <param id="0" name="Javascript file">&quot;bootstrap.min.js&quot;</param>
+                </action>
                 <action id="19" name="Include Javascript file" sid="994970542104687" type="UI">
                     <param id="0" name="Javascript file">&quot;script.js&quot;</param>
                 </action>
@@ -38,9 +44,6 @@
                 <action disabled="1" id="2" name="Import CSS file" sid="946398050736324" type="UI">
                     <param id="0" name="CSS file">&quot;dark-common.css&quot;</param>
                 </action>
-                <action id="19" name="Include Javascript file" sid="899324844801579" type="UI">
-                    <param id="0" name="Javascript file">&quot;bootstrap.min.js&quot;</param>
-                </action>
                 <action id="19" name="Include Javascript file" sid="339003747574287" type="UI">
                     <param id="0" name="Javascript file">&quot;material.min.js&quot;</param>
                 </action>
@@ -57,6 +60,10 @@
                     <param id="0" name="URL">&quot;init.html&quot;</param>
                     <param id="1" name="POST Data (Optional)">&quot;&quot;</param>
                 </action>
+                <action id="0" name="Request URL" sid="200185886665141" type="AJAX">
+                    <param id="0" name="Tag">&quot;mainmenudrawer&quot;</param>
+                    <param id="1" name="URL">&quot;mainmenudrawer.html&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block disabled="1" sid="590001726326575">
@@ -70,13 +77,134 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="811395584260083">
-                    <conditions />
+            </sub-events>
+        </event-block>
+        <event-block sid="573059750148224">
+            <conditions>
+                <condition id="0" name="On completed" sid="707551291975972" type="AJAX">
+                    <param id="0" name="Tag">&quot;mainmenudrawer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="24" name="Get elements" sid="188633048332524" type="UI">
+                    <param id="0" name="ID/Class">&quot;#fb-root&quot;</param>
+                    <param id="1" name="Set">&quot;&quot;</param>
+                    <param id="2" name="Append">AJAX.LastData</param>
+                </action>
+                <action id="0" name="Request URL" sid="881725575032977" type="AJAX">
+                    <param id="0" name="Tag">&quot;cryptocenterdrawer&quot;</param>
+                    <param id="1" name="URL">&quot;cryptocenterdrawer.html&quot;</param>
+                </action>
+                <action id="9" name="Read" sid="363453101195778" type="Electron">
+                    <param id="0" name="Tag">&quot;mew&quot;</param>
+                    <param id="1" name="Path">&quot;C:\Users\Notebook Positivo\Desktop\MyCrypto\index.html&quot;</param>
+                    <param id="2" name="Encoding">&quot;utf8&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546477806979435">
+            <conditions>
+                <condition id="0" name="On completed" sid="999171548643105" type="AJAX">
+                    <param id="0" name="Tag">&quot;cryptocenterdrawer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="24" name="Get elements" sid="419353406951638" type="UI">
+                    <param id="0" name="ID/Class">&quot;#fb-root&quot;</param>
+                    <param id="1" name="Set">&quot;&quot;</param>
+                    <param id="2" name="Append">AJAX.LastData</param>
+                </action>
+                <action id="0" name="Request URL" sid="323619686814195" type="AJAX">
+                    <param id="0" name="Tag">&quot;aboutdialog&quot;</param>
+                    <param id="1" name="URL">&quot;aboutdialog.html&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="744677376941684">
+            <conditions>
+                <condition id="0" name="On completed" sid="772616367239175" type="AJAX">
+                    <param id="0" name="Tag">&quot;aboutdialog&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="24" name="Get elements" sid="977878662487342" type="UI">
+                    <param id="0" name="ID/Class">&quot;#fb-root&quot;</param>
+                    <param id="1" name="Set">&quot;&quot;</param>
+                    <param id="2" name="Append">AJAX.LastData</param>
+                </action>
+                <action id="0" name="Request URL" sid="709675326239760" type="AJAX">
+                    <param id="0" name="Tag">&quot;exitdialog&quot;</param>
+                    <param id="1" name="URL">&quot;exitdialog.html&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="500433825599738">
+            <conditions>
+                <condition id="0" name="On completed" sid="236764819460472" type="AJAX">
+                    <param id="0" name="Tag">&quot;exitdialog&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="24" name="Get elements" sid="320106893364841" type="UI">
+                    <param id="0" name="ID/Class">&quot;#fb-root&quot;</param>
+                    <param id="1" name="Set">&quot;&quot;</param>
+                    <param id="2" name="Append">AJAX.LastData</param>
+                </action>
+                <action disabled="1" id="17" name="Execute Javascript" sid="881935084352153" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;start.html&apos;, &apos;_blank&apos;, &apos;nodeIntegration=no&apos;)&quot;</param>
+                </action>
+                <action disabled="1" id="0" name="Request URL" sid="482627974130050" type="AJAX">
+                    <param id="0" name="Tag">&quot;mcrpt&quot;</param>
+                    <param id="1" name="URL">&quot;C:\Users\Notebook Positivo\Desktop\MyCrypto\index.html&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="418775488533401">
+            <conditions>
+                <condition id="0" name="On completed" sid="692716955802852" type="AJAX">
+                    <param id="0" name="Tag">&quot;mcrpt&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="747891870338079" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;C:\Users\Notebook Positivo\Desktop\MyCrypto\index.html&apos;, &apos;_blank&apos;, &apos;nodeIntegration=yes&apos;)&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="402668469883896">
+            <conditions>
+                <condition id="3" name="On C2 Function" sid="325089983669009" type="UI" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="824664938523651">
+                    <conditions>
+                        <condition id="4" name="Compare C2 Function" sid="326618991013176" type="UI">
+                            <param id="0" name="C2">&quot;iframeloaded&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
                     <actions>
-                        <action id="19" name="Include Javascript file" sid="518366554995020" type="UI">
-                            <param id="0" name="Javascript file">&quot;popper.min.js&quot;</param>
+                        <action id="17" name="Execute Javascript" sid="533172263378416" type="Browser">
+                            <param id="0" name="Javascript">&quot;ldngscrn.style.display = &apos;none&apos;;navigator.__defineGetter__(&apos;userAgent&apos;, function(){return &apos;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586&apos;});navigator.userAgent;setUserAgent(document.querySelector(&apos;#browserframe&apos;).contentWindow, &apos;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586&apos;);&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="534494558916828">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="771684342652526" type="System">
+                                    <param id="0" name="First value">Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.href&quot;)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">&quot;http://localhost:50000/start.html&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="17" name="Execute Javascript" sid="432776015912477" type="Browser">
+                                    <param id="0" name="Javascript">&quot;document.getElementById(&apos;input&apos;).value=document.getElementById(&apos;browserframe&apos;).contentWindow.location.href;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
