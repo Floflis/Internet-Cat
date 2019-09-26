@@ -4,7 +4,7 @@ body {
 }
 
 canvas {
-    position: fixed!important;
-    width: 100%!important;
-    height: 100%!important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
