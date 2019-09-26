@@ -1,0 +1,41 @@
+this site doesn't allow to load on this browser, or is acting as if were a iframe
+data:,
+data:text/html,chromewebdata
+
+[ENTER] to submit site
+C2('reload');
+
+https://stackoverflow.com/questions/9249680/how-to-check-if-iframe-is-loaded-or-it-has-a-content
+https://aakashgoel.com/capturing-the-load-event-of-an-iframe-a-case-study-1a3761c871fe
+https://www.sitepoint.com/community/t/determining-when-an-iframe-is-fully-loaded/4724
+
+settings screen
+display homepage button
+set homepage
+cte mode mouse: https://instamalik-blog.tumblr.com/post/18283899726
+
+display loading screen
+display X btn while loading
+option to minimize loading screen
+
+/* If input haves valid text and it is submitted, update iframe URL with input's text > */
+function required()
+{
+var empt = document.forms["urlsubmit"]["urltext"].value;
+if (empt == "")
+{
+alert("Please input a Value");
+}
+else 
+{
+window.frames['browserframe'].location = document.querySelector('#input').value;
+}
+}
+/* < */
+
+<webview>
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\iframe to WEBVIEW
+http://www.bing.com/search?q=browser+fingerprint+test
+https://fingerprint.pet-portal.eu/
+
+archive page and list
