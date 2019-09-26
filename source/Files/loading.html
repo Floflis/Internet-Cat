@@ -93,7 +93,22 @@
     z-index: 2;
 ">
 
-<img src="tumblr_lollinapolina_mibqywp5Xo1s5t1i4o1_thanksforthis.gif" style="width:100%;height:100%;position:fixed"/>
+<script>
+//store the quotations in arrays
+quotes = new Array(6);
+quotes[0] = `<img src="tumblr_lollinapolina_mibqywp5Xo1s5t1i4o1_thanksforthis.gif" style="width:100%;height:100%;position:fixed"/>`;
+quotes[1] = `<img src="tumblr_mt6ckbr7nY1rl1c0bo1_500.gif" style="width:100%;height:100%;position:fixed"/>`;
+quotes[2] = `<img src="tumblr_mxt1z3M4zj1rl1c0bo1_500.gif" style="width:100%;height:100%;position:fixed"/>`;
+quotes[3] = `<img src="tumblr_oeor4w91fG1vx777ao1_500.gif" style="width:100%;height:100%;position:fixed"/>`;
+quotes[4] = `<img src="tumblr_0c141596ee67032d4e8ec627ec8bcaa3_c20e9462_500.gif" style="width:100%;height:100%;position:fixed"/>`;
+quotes[5] = ``;
+//calculate a random index
+index = Math.floor(Math.random() * quotes.length);
+//display the quotation
+document.write(`\n`);
+document.write(quotes[index]);
+//done
+</script>
 
         <div class="text-example">
             <img src="icon.png">

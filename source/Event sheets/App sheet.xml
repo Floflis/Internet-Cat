@@ -208,5 +208,26 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="240847915393444">
+            <conditions>
+                <condition id="3" name="On C2 Function" sid="261037663364484" type="UI" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="426193932777842">
+                    <conditions>
+                        <condition id="4" name="Compare C2 Function" sid="842030780033202" type="UI">
+                            <param id="0" name="C2">&quot;reload&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="17" name="Execute Javascript" sid="755109261681343" type="Browser">
+                            <param id="0" name="Javascript">&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.reload(true);&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
