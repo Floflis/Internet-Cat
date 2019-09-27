@@ -1,9 +1,14 @@
-this site doesn't allow to load on this browser, or is acting as if were a iframe
+pp/3b profile
+
+this site doesn't allow to load on this browser, or is acting as if detecting a iframe
 data:,
 data:text/html,chromewebdata
+-----
+net::ERR_NAME_NOT_RESOLVED
+net::ERR_CONNECTION_CLOSED
 
-[ENTER] to submit site
-C2('reload');
+get title and favicon
+https://www.google.com/search?q=css+cut+text+with+ellipsis&oq=css+cut+text+with+ellipsis&aqs=chrome..69i57.6476j0j0&sourceid=chrome&ie=UTF-8
 
 https://stackoverflow.com/questions/9249680/how-to-check-if-iframe-is-loaded-or-it-has-a-content
 https://aakashgoel.com/capturing-the-load-event-of-an-iframe-a-case-study-1a3761c871fe
@@ -12,11 +17,23 @@ https://www.sitepoint.com/community/t/determining-when-an-iframe-is-fully-loaded
 settings screen
 display homepage button
 set homepage
-cte mode mouse: https://instamalik-blog.tumblr.com/post/18283899726
 
-display loading screen
-display X btn while loading
-option to minimize loading screen
+rec CSS loading screen
+
+cte mode:
+rndm loading screen
+mouse https://instamalik-blog.tumblr.com/post/18283899726
+
+create local profile
+
+may I ask
+runs a full node? a server? of which? IPs to conn?
+-----
+social networks?
+-----
+dtct OS
+-----
+more fields, in your profile
 
 /* If input haves valid text and it is submitted, update iframe URL with input's text > */
 function required()
@@ -33,9 +50,15 @@ window.frames['browserframe'].location = document.querySelector('#input').value;
 }
 /* < */
 
+display loading screen
+display X btn while loading
+option to minimize loading screen
+
 <webview>
 C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\iframe to WEBVIEW
 http://www.bing.com/search?q=browser+fingerprint+test
 https://fingerprint.pet-portal.eu/
 
 archive page and list
+
+if txt contain "start.html", don't show url
