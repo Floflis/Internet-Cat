@@ -1,3 +1,9 @@
+$("#input").on('keyup', function (e) {
+    if (e.keyCode === 13) {
+        window.frames['browserframe'].location = document.querySelector('#input').value;
+    }
+});
+
 var ldngscrn = document.getElementById("loadingscreen");
 
     const brwsrfrm = document.getElementById("browserframe");
