@@ -171,6 +171,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Page loaded.</comment>
         <event-block sid="402668469883896">
             <conditions>
                 <condition id="3" name="On C2 Function" sid="325089983669009" type="UI" />
@@ -190,12 +191,12 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="534494558916828">
+                        <event-block sid="998666793695815">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="771684342652526" type="System">
-                                    <param id="0" name="First value">Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.href&quot;)</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Second value">&quot;http://localhost:50000/start.html&quot;</param>
+                                <condition id="-8" name="Compare two values" sid="840257895337567" type="System">
+                                    <param id="0" name="First value">find(Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.href&quot;), &quot;start.html&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">-1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -208,6 +209,7 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>Reload.</comment>
         <event-block sid="240847915393444">
             <conditions>
                 <condition id="3" name="On C2 Function" sid="261037663364484" type="UI" />
