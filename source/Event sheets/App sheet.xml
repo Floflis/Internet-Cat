@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>App sheet</name>
     <events>
+        <variable constant="0" name="homepage" sid="760423958329289" static="0" type="text">start-ic.html</variable>
         <include>Common sheet</include>
         <event-block sid="806523564058118">
             <conditions>
@@ -231,6 +232,28 @@
                     <actions>
                         <action id="17" name="Execute Javascript" sid="755109261681343" type="Browser">
                             <param id="0" name="Javascript">&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.reload(true);&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Goto Homepage.</comment>
+        <event-block sid="439351748162936">
+            <conditions>
+                <condition id="3" name="On C2 Function" sid="406493518429437" type="UI" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="207053569704345">
+                    <conditions>
+                        <condition id="4" name="Compare C2 Function" sid="370194678884901" type="UI">
+                            <param id="0" name="C2">&quot;homepage&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="17" name="Execute Javascript" sid="654445685653924" type="Browser">
+                            <param id="0" name="Javascript">&quot;window.frames[&apos;browserframe&apos;].location = &apos;&quot; &amp; homepage &amp; &quot;&apos;;refreshbtn.style.display = &apos;inline&apos;;flght.style.display = &apos;none&apos;;document.getElementById(&apos;input&apos;).value=&apos;&apos;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
