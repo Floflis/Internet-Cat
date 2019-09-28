@@ -218,7 +218,7 @@
                 <event-block sid="693118286661805">
                     <conditions>
                         <condition id="4" name="Compare C2 Function" sid="659337827282417" type="UI">
-                            <param id="0" name="C2">&quot;newurl&quot;</param>
+                            <param id="0" name="C2">&quot;isnewurl&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
                     </conditions>

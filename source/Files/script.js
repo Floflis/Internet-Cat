@@ -53,6 +53,7 @@ function iframeURLChange(iframe, callback) {
 // Usage:
 iframeURLChange(document.getElementById("browserframe"), function (newURL) {
     ldngscrn.style.display = "initial";
+    C2('isnewurl');
     console.log("URL changed:", newURL);
 });
 /* < */
