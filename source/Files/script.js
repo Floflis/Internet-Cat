@@ -1,3 +1,4 @@
+/* Display loading screen > */
 function iframeURLChange(iframe, callback) {
     var lastDispatched = null;
 
@@ -82,6 +83,7 @@ var ldngscrn = document.getElementById("loadingscreen");
         ldngscrn.style.display = "initial";
         console.log('Loading')
     };
+/* < */
 
 /* Spoof user-agent in browserframe > */
 function setUserAgent(window, userAgent) {
