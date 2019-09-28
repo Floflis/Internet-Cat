@@ -13,6 +13,9 @@ cte mode:
 rndm loading screen
 mouse https://instamalik-blog.tumblr.com/post/18283899726
 
+option to disable loading screen
+don't show loading screen if homepage is start.html
+
 this site doesn't allow to load on this browser, or is acting as if detecting a iframe
 data:,
 data:text/html,chromewebdata
@@ -21,13 +24,6 @@ net::ERR_NAME_NOT_RESOLVED
 net::ERR_CONNECTION_CLOSED
 
 support IC
-
---------------------------------------------------------------------------------------
-recommend sites:
-IPFessay
-Easily publish uncensorable essays
-https://ipfs.eternum.io/ipfs/QmRWeczoWjVoZSY4cvTAp6YaGJSwYJSWvANHXaHiNVd8to/
---------------------------------------------------------------------------------------
 
 https://www.npmjs.com/package/@trodi/electron-splashscreen
 
