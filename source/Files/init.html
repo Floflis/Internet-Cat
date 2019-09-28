@@ -27,9 +27,6 @@
 
 </browserbar>
 
-<iframe style="display: none" src="loading.html" sandbox="allow-scripts allow-popups allow-modals allow-forms" frameborder="none" class="browserframe" id="loadingscreen"></iframe>
-<iframe onunload="const brwsrfrm = document.getElementById("browserframe");ldngscrn.style.display = "initial";" onbeforeunload="const brwsrfrm = document.getElementById("browserframe");ldngscrn.style.display = "initial";" src="start-ic.html" onload="C2('iframeloaded');" sandbox="allow-scripts allow-popups allow-modals allow-forms" frameborder="none" id="browserframe" name="browserframe"></iframe>
-<script>
-navigator.__defineGetter__('userAgent', function(){return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'});navigator.userAgent;setUserAgent(document.querySelector('#browserframe').contentWindow, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586');
-</script>
+<iframe style="display: none" src="loading.html" sandbox="allow-scripts allow-modals allow-forms" frameborder="none" class="browserframe" id="loadingscreen"></iframe>
+<iframe onunload="const brwsrfrm = document.getElementById("browserframe");ldngscrn.style.display = "initial";" onbeforeunload="const brwsrfrm = document.getElementById("browserframe");ldngscrn.style.display = "initial";" src="start-ic.html" onload="C2('iframeloaded');" sandbox="allow-scripts allow-modals allow-forms" frameborder="none" id="browserframe" name="browserframe"></iframe>
 </div>
