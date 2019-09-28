@@ -187,8 +187,16 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="30" name="Set title" sid="890196012239685" type="Electron">
+                            <param id="0" name="Title">Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentDocument.title&quot;) &amp; &quot; - Internet Cat&quot;</param>
+                        </action>
                         <action id="17" name="Execute Javascript" sid="533172263378416" type="Browser">
                             <param id="0" name="Javascript">&quot;ldngscrn.style.display = &apos;none&apos;;navigator.__defineGetter__(&apos;userAgent&apos;, function(){return &apos;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586&apos;});navigator.userAgent;setUserAgent(document.querySelector(&apos;#browserframe&apos;).contentWindow, &apos;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586&apos;);&quot;</param>
+                        </action>
+                        <action disabled="1" id="24" name="Get elements" sid="820670519544784" type="UI">
+                            <param id="0" name="ID/Class">&quot;#favicon&quot;</param>
+                            <param id="1" name="Set">&quot;&lt;img width=&apos;32px&apos; src=&apos;home.svg&apos; onerror=&apos;this.src=`default.svg`&apos; /&gt;&quot;</param>
+                            <param id="2" name="Append">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
