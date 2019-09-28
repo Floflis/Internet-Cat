@@ -1,3 +1,41 @@
+/* Only displays enter button if input haves valid text > */
+var flght = document.getElementById("flght");
+var refreshbtn = document.getElementById("refresh");
+
+const input = document.querySelector('input')
+
+input.addEventListener('input', evt => {
+  const value = input.value
+  
+  if (!value) {
+    input.dataset.state = ''
+    refreshbtn.style.display = "inline";
+    flght.style.display = "none";
+  }
+  
+  const trimmed = value.trim()
+  
+  if (trimmed) {
+    flght.style.display = "inline";
+    refreshbtn.style.display = "none";
+    input.dataset.state = 'valid'
+  } else {
+    refreshbtn.style.display = "inline";
+    flght.style.display = "none";
+    input.dataset.state = 'invalid'
+  }
+})
+/* < */
+
+/* Press [ENTER] to access URL > */
+$("#input").on('keyup', function (e) {
+    if (e.keyCode === 13) {
+        window.frames['browserframe'].location = document.querySelector('#input').value;
+    }
+});
+/* < */
+
+/* Display loading screen > */
 var ldngscrn = document.getElementById("loadingscreen");
 
 const brwsrfrm = document.getElementById("browserframe");
@@ -14,7 +52,6 @@ const brwsrfrm = document.getElementById("browserframe");
         console.log('Loading')
     };
 
-/* Display loading screen > */
 function iframeURLChange(iframe, callback) {
     var lastDispatched = null;
 
@@ -55,42 +92,5 @@ iframeURLChange(document.getElementById("browserframe"), function (newURL) {
     ldngscrn.style.display = "initial";
     C2('isnewurl');
     console.log("URL changed:", newURL);
-});
-/* < */
-
-/* Only displays enter button if input haves valid text > */
-var flght = document.getElementById("flght");
-var refreshbtn = document.getElementById("refresh");
-
-const input = document.querySelector('input')
-
-input.addEventListener('input', evt => {
-  const value = input.value
-  
-  if (!value) {
-    input.dataset.state = ''
-    refreshbtn.style.display = "inline";
-    flght.style.display = "none";
-  }
-  
-  const trimmed = value.trim()
-  
-  if (trimmed) {
-    flght.style.display = "inline";
-    refreshbtn.style.display = "none";
-    input.dataset.state = 'valid'
-  } else {
-    refreshbtn.style.display = "inline";
-    flght.style.display = "none";
-    input.dataset.state = 'invalid'
-  }
-})
-/* < */
-
-/* Press [ENTER] to access URL > */
-$("#input").on('keyup', function (e) {
-    if (e.keyCode === 13) {
-        window.frames['browserframe'].location = document.querySelector('#input').value;
-    }
 });
 /* < */
