@@ -95,7 +95,7 @@
                     <param id="0" name="Tag">&quot;cryptocenterdrawer&quot;</param>
                     <param id="1" name="URL">&quot;cryptocenterdrawer.html&quot;</param>
                 </action>
-                <action id="9" name="Read" sid="363453101195778" type="Electron">
+                <action disabled="1" id="9" name="Read" sid="363453101195778" type="Electron">
                     <param id="0" name="Tag">&quot;mew&quot;</param>
                     <param id="1" name="Path">&quot;C:\Users\Notebook Positivo\Desktop\MyCrypto\index.html&quot;</param>
                     <param id="2" name="Encoding">&quot;utf8&quot;</param>

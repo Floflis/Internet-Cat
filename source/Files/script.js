@@ -1,7 +1,42 @@
-$("#input").on('keyup', function (e) {
-    if (e.keyCode === 13) {
-        window.frames['browserframe'].location = document.querySelector('#input').value;
+function iframeURLChange(iframe, callback) {
+    var lastDispatched = null;
+
+    var dispatchChange = function () {
+        var newHref = iframe.contentWindow.location.href;
+
+        if (newHref !== lastDispatched) {
+            callback(newHref);
+            lastDispatched = newHref;
+        }
+    };
+
+    var unloadHandler = function () {
+        // Timeout needed because the URL changes immediately after
+        // the `unload` event is dispatched.
+        setTimeout(dispatchChange, 0);
+    };
+
+    function attachUnload() {
+        // Remove the unloadHandler in case it was already attached.
+        // Otherwise, there will be two handlers, which is unnecessary.
+        iframe.contentWindow.removeEventListener("unload", unloadHandler);
+        iframe.contentWindow.addEventListener("unload", unloadHandler);
     }
+
+    iframe.addEventListener("load", function () {
+        attachUnload();
+
+        // Just in case the change wasn't dispatched during the unload event...
+        dispatchChange();
+    });
+
+    attachUnload();
+}
+
+// Usage:
+iframeURLChange(document.getElementById("browserframe"), function (newURL) {
+    ldngscrn.style.display = "initial";
+    console.log("URL changed:", newURL);
 });
 
 var ldngscrn = document.getElementById("loadingscreen");
@@ -10,10 +45,42 @@ var ldngscrn = document.getElementById("loadingscreen");
 
     brwsrfrm.contentWindow.onbeforeunload = function () {
         ldngscrn.style.display = "initial";
+        console.log('Loading')
     };
 
     brwsrfrm.onbeforeunload = function () {
-        alert("Please input a Value");
+        ldngscrn.style.display = "initial";
+        console.log('Loading')
+    };
+
+    brwsrfrm.contentWindow.onunload = function () {
+        ldngscrn.style.display = "initial";
+        console.log('Loading')
+    };
+
+    brwsrfrm.onunload = function () {
+        ldngscrn.style.display = "initial";
+        console.log('Loading')
+    };
+
+    brwsrfrm.contentWindow.document.onbeforeunload = function () {
+        ldngscrn.style.display = "initial";
+        console.log('Loading')
+    };
+
+    brwsrfrm.contentWindow.document.onunload = function () {
+        ldngscrn.style.display = "initial";
+        console.log('Loading')
+    };
+
+    brwsrfrm.contentDocument.onbeforeunload = function () {
+        ldngscrn.style.display = "initial";
+        console.log('Loading')
+    };
+
+    brwsrfrm.contentDocument.onunload = function () {
+        ldngscrn.style.display = "initial";
+        console.log('Loading')
     };
 
 /* Spoof user-agent in browserframe > */
@@ -58,6 +125,14 @@ input.addEventListener('input', evt => {
     input.dataset.state = 'invalid'
   }
 })
+/* < */
+
+/* Press [ENTER] to access URL > */
+$("#input").on('keyup', function (e) {
+    if (e.keyCode === 13) {
+        window.frames['browserframe'].location = document.querySelector('#input').value;
+    }
+});
 /* < */
 
 /**
