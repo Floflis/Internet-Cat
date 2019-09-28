@@ -151,6 +151,9 @@
                     <param id="1" name="Set">&quot;&quot;</param>
                     <param id="2" name="Append">AJAX.LastData</param>
                 </action>
+                <action id="17" name="Execute Javascript" sid="135903283564744" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.frames[&apos;browserframe&apos;].location = &apos;&quot; &amp; homepage &amp; &quot;&apos;;refreshbtn.style.display = &apos;inline&apos;;flght.style.display = &apos;none&apos;;document.getElementById(&apos;input&apos;).value=&apos;&apos;&quot;</param>
+                </action>
                 <action disabled="1" id="17" name="Execute Javascript" sid="881935084352153" type="Browser">
                     <param id="0" name="Javascript">&quot;window.open(&apos;start.html&apos;, &apos;_blank&apos;, &apos;nodeIntegration=no&apos;)&quot;</param>
                 </action>
@@ -187,11 +190,14 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="21" name="Execute Javascript" sid="513404371031844" type="UI">
+                            <param id="0" name="Javascript">&quot;C2(&apos;updtbrowserbar&apos;);&quot;</param>
+                        </action>
                         <action id="30" name="Set title" sid="890196012239685" type="Electron">
                             <param id="0" name="Title">Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentDocument.title&quot;) &amp; &quot; - Internet Cat&quot;</param>
                         </action>
                         <action id="17" name="Execute Javascript" sid="533172263378416" type="Browser">
-                            <param id="0" name="Javascript">&quot;ldngscrn.style.display = &apos;none&apos;;&quot;</param>
+                            <param id="0" name="Javascript">&quot;document.getElementById(&apos;loadingscreen&apos;).style.display = &apos;none&apos;;&quot;</param>
                         </action>
                         <action disabled="1" id="24" name="Get elements" sid="820670519544784" type="UI">
                             <param id="0" name="ID/Class">&quot;#favicon&quot;</param>
@@ -199,6 +205,46 @@
                             <param id="2" name="Append">&quot;&quot;</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Detect when URL changed.</comment>
+        <event-block sid="769917183453445">
+            <conditions>
+                <condition id="3" name="On C2 Function" sid="555920391276667" type="UI" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="693118286661805">
+                    <conditions>
+                        <condition id="4" name="Compare C2 Function" sid="659337827282417" type="UI">
+                            <param id="0" name="C2">&quot;newurl&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="21" name="Execute Javascript" sid="193258668195410" type="UI">
+                            <param id="0" name="Javascript">&quot;C2(&apos;updtbrowserbar&apos;);&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Display site URL in browserbar (and update it).</comment>
+        <event-block sid="144585869123608">
+            <conditions>
+                <condition id="3" name="On C2 Function" sid="451336072170953" type="UI" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="622627846693263">
+                    <conditions>
+                        <condition id="4" name="Compare C2 Function" sid="813007886771868" type="UI">
+                            <param id="0" name="C2">&quot;updtbrowserbar&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
                     <sub-events>
                         <event-block sid="998666793695815">
                             <conditions>
@@ -216,6 +262,16 @@
                             <actions>
                                 <action id="17" name="Execute Javascript" sid="432776015912477" type="Browser">
                                     <param id="0" name="Javascript">&quot;document.getElementById(&apos;input&apos;).value=document.getElementById(&apos;browserframe&apos;).contentWindow.location.href;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="812865622257484">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="576124514490080" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="17" name="Execute Javascript" sid="181217633265045" type="Browser">
+                                    <param id="0" name="Javascript">&quot;document.getElementById(&apos;input&apos;).value=&apos;&apos;;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -239,9 +295,30 @@
                     </conditions>
                     <actions>
                         <action id="17" name="Execute Javascript" sid="755109261681343" type="Browser">
-                            <param id="0" name="Javascript">&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.reload(true);&quot;</param>
+                            <param id="0" name="Javascript">&quot;document.getElementById(&apos;loadingscreen&apos;).contentWindow.location.reload(true);document.getElementById(&apos;browserframe&apos;).contentWindow.location.reload(true);&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="375750839674310">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="414653959455743" type="System">
+                                    <param id="0" name="First value">find(Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.href&quot;), &quot;/start-ic.html&quot;)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">-1</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="781555892181341" type="System">
+                                    <param id="0" name="First value">find(Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.href&quot;), &quot;http://localhost:&quot;)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="17" name="Execute Javascript" sid="923898606765803" type="Browser">
+                                    <param id="0" name="Javascript">&quot;document.getElementById(&apos;loadingscreen&apos;).style.display = &apos;initial&apos;;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -261,9 +338,30 @@
                     </conditions>
                     <actions>
                         <action id="17" name="Execute Javascript" sid="654445685653924" type="Browser">
-                            <param id="0" name="Javascript">&quot;window.frames[&apos;browserframe&apos;].location = &apos;&quot; &amp; homepage &amp; &quot;&apos;;refreshbtn.style.display = &apos;inline&apos;;flght.style.display = &apos;none&apos;;document.getElementById(&apos;input&apos;).value=&apos;&apos;&quot;</param>
+                            <param id="0" name="Javascript">&quot;document.getElementById(&apos;loadingscreen&apos;).contentWindow.location.reload(true);window.frames[&apos;browserframe&apos;].location = &apos;&quot; &amp; homepage &amp; &quot;&apos;;refreshbtn.style.display = &apos;inline&apos;;flght.style.display = &apos;none&apos;;&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="838830704977122">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="936889333796624" type="System">
+                                    <param id="0" name="First value">find(Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.href&quot;), &quot;/start-ic.html&quot;)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">-1</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="463438980194268" type="System">
+                                    <param id="0" name="First value">find(Browser.ExecJS(&quot;document.getElementById(&apos;browserframe&apos;).contentWindow.location.href&quot;), &quot;http://localhost:&quot;)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="17" name="Execute Javascript" sid="258492999442282" type="Browser">
+                                    <param id="0" name="Javascript">&quot;ldngscrn.style.display = &apos;initial&apos;;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>

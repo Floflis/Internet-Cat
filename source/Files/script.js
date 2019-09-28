@@ -1,3 +1,19 @@
+var ldngscrn = document.getElementById("loadingscreen");
+
+const brwsrfrm = document.getElementById("browserframe");
+
+    brwsrfrm.contentWindow.onbeforeunload = function () {
+        ldngscrn.style.display = "initial";
+        document.getElementById('loadingscreen').contentWindow.location.reload(true);
+        console.log('Loading')
+    };
+
+    brwsrfrm.contentWindow.onunload = function () {
+        ldngscrn.style.display = "initial";
+        document.getElementById('loadingscreen').contentWindow.location.reload(true);
+        console.log('Loading')
+    };
+
 /* Display loading screen > */
 function iframeURLChange(iframe, callback) {
     var lastDispatched = null;
@@ -39,50 +55,6 @@ iframeURLChange(document.getElementById("browserframe"), function (newURL) {
     ldngscrn.style.display = "initial";
     console.log("URL changed:", newURL);
 });
-
-var ldngscrn = document.getElementById("loadingscreen");
-
-    const brwsrfrm = document.getElementById("browserframe");
-
-    brwsrfrm.contentWindow.onbeforeunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
-
-    brwsrfrm.onbeforeunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
-
-    brwsrfrm.contentWindow.onunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
-
-    brwsrfrm.onunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
-
-    brwsrfrm.contentWindow.document.onbeforeunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
-
-    brwsrfrm.contentWindow.document.onunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
-
-    brwsrfrm.contentDocument.onbeforeunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
-
-    brwsrfrm.contentDocument.onunload = function () {
-        ldngscrn.style.display = "initial";
-        console.log('Loading')
-    };
 /* < */
 
 /* Only displays enter button if input haves valid text > */
