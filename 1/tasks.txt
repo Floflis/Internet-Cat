@@ -1,20 +1,4 @@
-pp/3b profile
-
-this site doesn't allow to load on this browser, or is acting as if detecting a iframe
-data:,
-data:text/html,chromewebdata
------
-net::ERR_NAME_NOT_RESOLVED
-net::ERR_CONNECTION_CLOSED
-
-support IC 0xAb335D3ceAA50bF665AB6482366F41D36ce5c416
-
-recommend sites:
-IPFessay
-Easily publish uncensorable essays
-https://ipfs.eternum.io/ipfs/QmRWeczoWjVoZSY4cvTAp6YaGJSwYJSWvANHXaHiNVd8to/
-
-https://www.npmjs.com/package/@trodi/electron-splashscreen
+https://3box.io/0xab335d3ceaa50bf665ab6482366f41d36ce5c416/
 
 get title and favicon
 https://www.google.com/search?q=css+cut+text+with+ellipsis&oq=css+cut+text+with+ellipsis&aqs=chrome..69i57.6476j0j0&sourceid=chrome&ie=UTF-8
@@ -28,6 +12,22 @@ rec CSS loading screen
 cte mode:
 rndm loading screen
 mouse https://instamalik-blog.tumblr.com/post/18283899726
+
+this site doesn't allow to load on this browser, or is acting as if detecting a iframe
+data:,
+data:text/html,chromewebdata
+-----
+net::ERR_NAME_NOT_RESOLVED
+net::ERR_CONNECTION_CLOSED
+
+support IC
+
+recommend sites:
+IPFessay
+Easily publish uncensorable essays
+https://ipfs.eternum.io/ipfs/QmRWeczoWjVoZSY4cvTAp6YaGJSwYJSWvANHXaHiNVd8to/
+
+https://www.npmjs.com/package/@trodi/electron-splashscreen
 
 create local profile
 
