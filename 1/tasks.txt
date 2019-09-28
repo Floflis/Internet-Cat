@@ -1,7 +1,11 @@
 https://3box.io/0xab335d3ceaa50bf665ab6482366f41d36ce5c416/
 
-get title and favicon
-https://www.google.com/search?q=css+cut+text+with+ellipsis&oq=css+cut+text+with+ellipsis&aqs=chrome..69i57.6476j0j0&sourceid=chrome&ie=UTF-8
+refresh loading.html before showing it
+display loading.html when clicking refresh or homepage
+
+display loading screen
+display X btn while loading
+option to minimize loading screen
 
 settings screen
 display homepage button
@@ -22,10 +26,12 @@ net::ERR_CONNECTION_CLOSED
 
 support IC
 
+--------------------------------------------------------------------------------------
 recommend sites:
 IPFessay
 Easily publish uncensorable essays
 https://ipfs.eternum.io/ipfs/QmRWeczoWjVoZSY4cvTAp6YaGJSwYJSWvANHXaHiNVd8to/
+--------------------------------------------------------------------------------------
 
 https://www.npmjs.com/package/@trodi/electron-splashscreen
 
@@ -54,10 +60,6 @@ window.frames['browserframe'].location = document.querySelector('#input').value;
 }
 }
 /* < */
-
-display loading screen
-display X btn while loading
-option to minimize loading screen
 
 <webview>
 C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\iframe to WEBVIEW
