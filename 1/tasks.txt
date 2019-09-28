@@ -7,12 +7,17 @@ data:text/html,chromewebdata
 net::ERR_NAME_NOT_RESOLVED
 net::ERR_CONNECTION_CLOSED
 
+support IC 0xAb335D3ceAA50bF665AB6482366F41D36ce5c416
+
+recommend sites:
+IPFessay
+Easily publish uncensorable essays
+https://ipfs.eternum.io/ipfs/QmRWeczoWjVoZSY4cvTAp6YaGJSwYJSWvANHXaHiNVd8to/
+
+https://www.npmjs.com/package/@trodi/electron-splashscreen
+
 get title and favicon
 https://www.google.com/search?q=css+cut+text+with+ellipsis&oq=css+cut+text+with+ellipsis&aqs=chrome..69i57.6476j0j0&sourceid=chrome&ie=UTF-8
-
-https://stackoverflow.com/questions/9249680/how-to-check-if-iframe-is-loaded-or-it-has-a-content
-https://aakashgoel.com/capturing-the-load-event-of-an-iframe-a-case-study-1a3761c871fe
-https://www.sitepoint.com/community/t/determining-when-an-iframe-is-fully-loaded/4724
 
 settings screen
 display homepage button
