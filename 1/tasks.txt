@@ -1,9 +1,5 @@
 https://3box.io/0xab335d3ceaa50bf665ab6482366f41d36ce5c416/
 
-refresh loading.html before showing it
-display loading.html when clicking refresh or homepage
-
-display loading screen
 display X btn while loading
 option to minimize loading screen
 
