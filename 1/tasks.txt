@@ -1,8 +1,3 @@
-https://3box.io/0xab335d3ceaa50bf665ab6482366f41d36ce5c416/
-
-display X btn while loading
-option to minimize loading screen
-
 settings screen
 display homepage button
 set homepage
@@ -13,8 +8,20 @@ cte mode:
 rndm loading screen
 mouse https://instamalik-blog.tumblr.com/post/18283899726
 
+--------------------------------------------------------------------------------------
+
+display X btn while loading
+option to minimize loading screen
+
 option to disable loading screen
+
 don't show loading screen if homepage is start.html
+
+--------------------------------------------------------------------------------------
+F11 | prnt
+make browser menus stupdly simple
+about | ext
+--------------------------------------------------------------------------------------
 
 this site doesn't allow to load on this browser, or is acting as if detecting a iframe
 data:,
@@ -23,9 +30,15 @@ data:text/html,chromewebdata
 net::ERR_NAME_NOT_RESOLVED
 net::ERR_CONNECTION_CLOSED
 
+--------------------------------------------------------------------------------------
+
 support IC
 
+--------------------------------------------------------------------------------------
+
 https://www.npmjs.com/package/@trodi/electron-splashscreen
+
+--------------------------------------------------------------------------------------
 
 create local profile
 
@@ -37,6 +50,15 @@ social networks?
 dtct OS
 -----
 more fields, in your profile
+--------------------------------------------------------------------------------------
+
+dark theme
+
+intro.js
+
+new menu icon
+
+--------------------------------------------------------------------------------------
 
 /* If input haves valid text and it is submitted, update iframe URL with input's text > */
 function required()
@@ -60,4 +82,6 @@ https://fingerprint.pet-portal.eu/
 
 archive page and list
 
-if txt contain "start.html", don't show url
+http://localhost:8080/ipfs (IPFS protocol)
+
+https://3box.io/0xab335d3ceaa50bf665ab6482366f41d36ce5c416/

@@ -1,0 +1,16 @@
+J:\cygwin
+
+jq
+make
+
+wget
+gnupg
+gnupg2
+apt-cyg
+
+git
+gcc-g++
+
+openssl
+
+python
