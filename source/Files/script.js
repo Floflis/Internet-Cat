@@ -1,3 +1,12 @@
+window.$ = window.jQuery = require('jquery');
+var sudo = require('sudo-prompt');
+var options = {
+  name: 'Electron',
+};
+const username = require('username');
+var app = require('electron').remote;
+var dialog = app.dialog;
+
 /* Only displays enter button if input haves valid text > */
 var flght = document.getElementById("flght");
 var refreshbtn = document.getElementById("refresh");

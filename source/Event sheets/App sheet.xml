@@ -357,7 +357,7 @@
                             </conditions>
                             <actions>
                                 <action id="17" name="Execute Javascript" sid="258492999442282" type="Browser">
-                                    <param id="0" name="Javascript">&quot;ldngscrn.style.display = &apos;initial&apos;;&quot;</param>
+                                    <param id="0" name="Javascript">&quot;document.getElementById(&apos;loadingscreen&apos;).style.display = &apos;initial&apos;;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
