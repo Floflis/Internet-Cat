@@ -1,3 +1,92 @@
+F11 | prnt
+make browser menus stupdly simple
+about | ext
+--------------------------------------------------------------------------------------
+
+new menu icon
+
+--------------------------------------------------------------------------------------
+
+detect OS and Arch
+
+NodeJS install on Windows and add to patch / CLI install NodeJS on Mac/Linux
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\1. NodeJS
+
+--------------------------------------------------------------------------------------
+
+aragon btn, open window with loading, npm start, know it and run webserver
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\2. Aragon
+
+--------------------------------------------------------------------------------------
+
+require eth-provider
+
+frame btn, open window with loading (and install status)
+
+on Windows/Mac, run installer / then exec program when clicked btn
+
+on Linux: npm start
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\3. Frame
+
+--------------------------------------------------------------------------------------
+
+intro.js
+
+--------------------------------------------------------------------------------------
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\5. YouNet
+
+--------------------------------------------------------------------------------------
+
+create local profile, make it a Dat
+
+may I ask
+runs a full node? a server? of which? IPs to conn?
+-----
+social networks?
+-----
+dtct OS
+-----
+more fields, in your profile
+
+--------------------------------------------------------------------------------------
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\5. cntcts
+
+--------------------------------------------------------------------------------------
+
+frame connect request (eth-provider)
+
+know frame's ETH address
+store ETH address in local profile
+
+--------------------------------------------------------------------------------------
+
+install tree folder ( / in Linux and Mac, C:/ in Windows)
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\4. f tree
+
+--------------------------------------------------------------------------------------
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\5. cntcts
+
+--------------------------------------------------------------------------------------
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\7. IPFS
+
+--------------------------------------------------------------------------------------
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\8. SSB
+
+--------------------------------------------------------------------------------------
+
+C:\Users\Notebook Positivo\Desktop\Plasmmer\orgs\Floflis\Apps\IC\1\1. other apps\9. iframe to WEBVIEW
+
+--------------------------------------------------------------------------------------
+
 settings screen
 display homepage button
 set homepage
@@ -18,10 +107,6 @@ option to disable loading screen
 don't show loading screen if homepage is start.html
 
 --------------------------------------------------------------------------------------
-F11 | prnt
-make browser menus stupdly simple
-about | ext
---------------------------------------------------------------------------------------
 
 this site doesn't allow to load on this browser, or is acting as if detecting a iframe
 data:,
@@ -40,23 +125,7 @@ https://www.npmjs.com/package/@trodi/electron-splashscreen
 
 --------------------------------------------------------------------------------------
 
-create local profile
-
-may I ask
-runs a full node? a server? of which? IPs to conn?
------
-social networks?
------
-dtct OS
------
-more fields, in your profile
---------------------------------------------------------------------------------------
-
 dark theme
-
-intro.js
-
-new menu icon
 
 --------------------------------------------------------------------------------------
 
