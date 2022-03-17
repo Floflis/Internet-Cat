@@ -1,13 +1,17 @@
 <div aria-hidden="true" class="navdrawer navdrawer-right" id="navdrawerDefault" tabindex="-1">
   <div style="width:500px" class="navdrawer-content">
 
-  <nav class="navdrawer-nav">
-    <a onclick="window.frames['browserframe'].focus();window.frames['browserframe'].print();" class="nav-item"><i class="material-icons">print</i> Print this page</a>
-    <div class="navdrawer-divider"></div>
-    <a onclick="$('#aboutDialog').modal('show')" class="nav-item"><i class="material-icons">info</i> About</a>
-    <div class="navdrawer-divider"></div>
-    <a onclick="$('#exitDialog').modal('show')" class="nav-itemm"><i class="material-icons">exit_to_app</i> Exit</a>
-  </nav>
+<div class="modal-header">
+        <button onclick="C2('fullscreen');" type="button" class="btn btn-lg btn-block"><i class="material-icons">fullscreen</i> Fullscreen <small>(F11)</small></button>
+<button onclick="window.frames['browserframe'].focus();window.frames['browserframe'].print();" type="button" class="btn btn-lg btn-block"><i class="material-icons">print</i> Print this page</button>
+      </div>
+
+        <center><img width="225px" src="icon.png"/><h1>Make browser menus stupdly simple!</h1></center>
+
+<div class="modal-footer">
+        <button onclick="$('#aboutDialog').modal('show')" type="button" class="btn btn-lg btn-block"><i class="material-icons">info</i> About</button>
+<button onclick="$('#exitDialog').modal('show')" type="button" class="btn btn-danger btn-lg btn-block"><i class="material-icons">exit_to_app</i> Exit</button>
+      </div>
 
   </div>
 </div>

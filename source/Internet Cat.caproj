@@ -116,7 +116,6 @@
         <file name="script.js" />
         <file name="ZeroFrame.js" />
         <file name="ZeroPage.js" />
-        <file name="icon.png" />
         <file name="style.css" />
         <file name="loading.gif" />
         <file name="app-custom.css" />
@@ -148,5 +147,6 @@
         <file name="tumblr_0c141596ee67032d4e8ec627ec8bcaa3_c20e9462_500.gif" />
         <file name="home.svg" />
         <file name="default.svg" />
+        <file name="icon.png" />
     </files-folder>
 </c2project>

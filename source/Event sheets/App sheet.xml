@@ -173,6 +173,9 @@
                 <action id="17" name="Execute Javascript" sid="747891870338079" type="Browser">
                     <param id="0" name="Javascript">&quot;window.open(&apos;C:\Users\Notebook Positivo\Desktop\MyCrypto\index.html&apos;, &apos;_blank&apos;, &apos;nodeIntegration=yes&apos;)&quot;</param>
                 </action>
+                <action disabled="1" id="13" name="Go to URL" sid="263843990354441" type="UI">
+                    <param id="0" name="URL">Electron.GetOSPlatform &amp; Electron.GetOSArch</param>
+                </action>
             </actions>
         </event-block>
         <comment>Page loaded.</comment>

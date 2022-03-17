@@ -4,6 +4,7 @@
     <name>Common sheet</name>
     <events>
         <variable constant="0" name="Fullscreen" sid="572591868848104" static="0" type="number">0</variable>
+        <variable constant="0" name="FullScreenTrigger" sid="393562099511507" static="0" type="number">0</variable>
         <event-block sid="138470110342194">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="864670854837572" type="System" />
@@ -31,10 +32,47 @@
             <sub-events>
                 <event-group description="" sid="323382041484991" title="F11">
                     <sub-events>
+                        <event-block sid="725480931981617">
+                            <conditions>
+                                <condition id="3" name="On C2 Function" sid="561502905251549" type="UI" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="375378710417127">
+                                    <conditions>
+                                        <condition id="4" name="Compare C2 Function" sid="832429239686160" type="UI">
+                                            <param id="0" name="C2">&quot;fullscreen&quot;</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="429124820093004" type="System">
+                                            <param id="0" name="Variable">FullScreenTrigger</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <event-block sid="888609442893309">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="891727837196051" type="Keyboard">
                                     <param id="0" name="Key">122 (F11)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="850476483570513" type="System">
+                                    <param id="0" name="Variable">FullScreenTrigger</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="471168316434970">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="802690232510493" type="System">
+                                    <param id="0" name="Variable">FullScreenTrigger</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -49,6 +87,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-9" name="Set value" sid="707647467430453" type="System">
+                                            <param id="0" name="Variable">FullScreenTrigger</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="8" name="Set Fullscreen" sid="605831964678273" type="Electron">
                                             <param id="0" name="State">0</param>
                                         </action>
@@ -71,6 +113,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-9" name="Set value" sid="849707748737676" type="System">
+                                            <param id="0" name="Variable">FullScreenTrigger</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="8" name="Set Fullscreen" sid="685014559519760" type="Electron">
                                             <param id="0" name="State">1</param>
                                         </action>
@@ -154,7 +200,7 @@
                         <event-block sid="696252470710567">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="509863962277115" type="Keyboard">
-                                    <param id="0" name="Key">27 (Esc)</param>
+                                    <param id="0" name="Key">27 (Escape)</param>
                                 </condition>
                             </conditions>
                             <actions>

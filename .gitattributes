@@ -33,3 +33,4 @@
 *.usv filter=lfs diff=lfs merge=lfs -text
 *.autosave filter=lfs diff=lfs merge=lfs -text
 *.backup1 filter=lfs diff=lfs merge=lfs -text
+Presentation.pptx filter=lfs diff=lfs merge=lfs -text
