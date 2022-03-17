@@ -1,0 +1,44 @@
+{
+  "id": "browser",
+  "application": "app",
+  "name": "Internet Cat",
+  "version": "r1",
+  "description": "The most cute and kind web browser",
+  "icon": "icon.png",
+  "linux_icon": "",
+  "author": "Daniell Mesquita",
+  "url": "index.html",
+  "ime_default_softkey_bar": true,
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "icons": {
+    "56": "/notes/icon_56.png",
+    "_comment1": "<< KaiOS icon",
+    "60": "/notes/icon_60.png",
+    "64": "/notes/icon_64.png",
+    "84": "/notes/icon_84.png",
+    "_comment2": "<< KaiOS icon",
+    "112": "/notes/icon_112.png",
+    "_comment3": "<< KaiOS icon",
+    "128": "/notes/icon_128.png",
+    "512": "/notes/icon_512.png"
+  },
+  "developer": {
+    "name": "Daniell Mesquita",
+    "url": "http://"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Internet Cat",
+      "description": "The most cute and kind web browser"
+    }
+  },
+  "floflispackager": {
+    "exportsfolder": "c2export",
+    "constructfolder": "source"
+  },
+  "default_locale": "en-US",
+  "width": "700",
+  "height": "450",
+  "cursor": true
+}
